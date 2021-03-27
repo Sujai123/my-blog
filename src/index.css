@@ -9,11 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* height: 100vh; */
-  height: 100%;
-  background: linear-gradient(white, rgb(255, 0, 149), rebeccapurple);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #EEEEEE;
+  color: #757575
 }
 
 code {

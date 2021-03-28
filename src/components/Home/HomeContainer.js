@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, makeStyles } from "@material-ui/core";
 import styles from "./home.module.css"
 import Profile from './Profile';
-import { Facebook, GitHub, Instagram, LinkedIn, Mail } from '@material-ui/icons';
+import { Facebook, GitHub, Instagram, LinkedIn, Mail, Twitter } from '@material-ui/icons';
 import WorkDetails from './WorkDetails';
 
 const useStyles = makeStyles(theme => ({
@@ -55,6 +55,9 @@ const HomeContainer = () => {
           </Box>
           <Box component="a" href="https://github.com/Sujai123/" target="_blank">
             <GitHub color="secondary" />
+          </Box>
+          <Box component="a" href="https://github.com/Sujai123/" target="_blank">
+            <Twitter color="secondary" />
           </Box>
         </Box>
       </Box>

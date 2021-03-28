@@ -1,7 +1,7 @@
 import { Box, Divider, LinearProgress, makeStyles, Slider } from '@material-ui/core'
 import { Extension, Home, Mail, Work } from '@material-ui/icons'
 import React from 'react'
-import logo from "../../images/logo.png"
+import Logo from "../../images/logo"
 
 const useStyles = makeStyles({
   container: {
@@ -30,6 +30,14 @@ const useStyles = makeStyles({
   },
   skillsSlider: {
     padding: "20px 0px"
+  },
+  name: {
+    position: "absolute",
+    top: "120px",
+    color: "#fff",
+    fontWeight: "400",
+    fontSize: "30px",
+    left: "15px"
   }
 });
 
@@ -76,7 +84,10 @@ const Profile = () => {
   return (
     <Box>
       <Box>
-        <img src={logo} width="100%" />
+        <Box>
+          <Logo />
+        </Box>
+        <Box className={classes.name}>Sujai Beniks J</Box>
       </Box>
       <Box className={classes.container}>
         {basicDetails.map((eachRow, index) => {

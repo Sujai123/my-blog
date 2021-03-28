@@ -82,7 +82,7 @@ const AboutMe = () => {
       </Box>
       <Box>
         Front End Software Developer
-        More Interest n Web Development
+        More Interest on Web Development
         1 year of experience on reactjs development
         Intermediate knowledge on Ruby on Rails and Nodejs
         Love to learn new things

@@ -38,7 +38,7 @@ const WorkExperience = () => {
   const workExperienceContent = [{
     role: "Rently - Front end developer",
     fromTo: <Box>Aug 2020 - <Box className={classes.current}>Current</Box></Box>,
-    description: "Got converted from Intern to Frontend Software Developer and get well versed on that field started learning Ruby on rails and work as an backend devleoper and that makes me a complete full stack developer"
+    description: "Got converted from Intern to Frontend Software Developer and get well versed on that field started learning Ruby on rails and work as an backend developer and that makes me a complete full stack developer"
   }, {
     role: "Rently - Intern",
     fromTo: "Aug 2019 - Aug 2020",

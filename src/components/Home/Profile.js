@@ -1,11 +1,12 @@
-import { Box, Divider, LinearProgress, makeStyles, Slider } from '@material-ui/core'
+import { Box, Divider, LinearProgress, makeStyles, Slider, StylesProvider } from '@material-ui/core'
 import { Extension, Home, Mail, Work } from '@material-ui/icons'
 import React from 'react'
 import Logo from "../../images/logo"
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   container: {
-    margin: "10px"
+    margin: "10px",
+    // width: "100%"
   },
   row: {
     display: "flex",
@@ -38,8 +39,23 @@ const useStyles = makeStyles({
     fontWeight: "400",
     fontSize: "30px",
     left: "15px"
+  },
+  profileContainer: {
+    display: "block",
+    [theme.breakpoints.down('sm')]: {
+      display: "block",
+    },
+    [theme.breakpoints.up('sm')]: {
+      display: "flex",
+    },
+    [theme.breakpoints.up('md')]: {
+      display: "flex",
+    },
+    [theme.breakpoints.up('lg')]: {
+      display: "block",
+    }
   }
-});
+}));
 
 const Profile = () => {
 
@@ -82,7 +98,8 @@ const Profile = () => {
   }];
 
   return (
-    <Box>
+    <Box className={classes.profileContainer} >
+      <Box>
       <Box>
         <Box>
           <Logo />
@@ -103,6 +120,9 @@ const Profile = () => {
           )
         })}
         <Divider />
+        </Box>
+        </Box>
+        <Box className={classes.container}>
         <Box className={classes.header}>
           <Box>
             <Extension color="primary" />

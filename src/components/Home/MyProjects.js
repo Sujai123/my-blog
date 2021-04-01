@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     display: "inline-block",
     borderRadius: "4px",
-    padding: "0px 10px"
+    padding: "0px 10px",
+    marginBottom: "10px"
   },
   link: {
     color: theme.palette.primary.main,

@@ -22,7 +22,21 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.primary.main,
     textAlign: "center",
     color: "#ffffff"
-  }
+  },
+  container: {
+    display: "flex",
+    height: "100%",
+    width: "100%",
+    [theme.breakpoints.down('md')]: {
+      display: "block",
+    },
+    [theme.breakpoints.up('md')]: {
+      display: "block",
+    },
+    [theme.breakpoints.up('lg')]: {
+      display: "flex",
+    }
+}
 }))
 
 const HomeContainer = () => {
@@ -31,7 +45,7 @@ const HomeContainer = () => {
 
   return (
     <Box>
-      <Box className={styles.container}>
+      <Box className={classes.container}>
         <Box className={classes.profile}>
           <Profile />
         </Box>

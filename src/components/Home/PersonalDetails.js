@@ -22,7 +22,13 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold"
   },
   value: {
-    flex: 3
+    flex: 3,
+    [theme.breakpoints.down('sm')]: {
+      flex: 1,
+    },
+    [theme.breakpoints.between('sm', "md")]: {
+      flex: 2,
+    },
   },
   row: {
     display: "flex",
@@ -63,7 +69,7 @@ const PersonalDetails = () => {
   }]
 
   return (
-    <Box>
+    <Box width="100%">
       <Box className={classes.mainTitle}>
         <Person color="primary" fontSize="large" />
         <Box ml="15px">

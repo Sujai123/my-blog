@@ -5,8 +5,8 @@ import Logo from "../../images/logo"
 
 const useStyles = makeStyles(theme => ({
   container: {
-    margin: "10px",
-    // width: "100%"
+    // margin: "10px",
+    width: "100%"
   },
   row: {
     display: "flex",
@@ -107,6 +107,7 @@ const Profile = () => {
         <Box className={classes.name}>Sujai Beniks J</Box>
       </Box>
       <Box className={classes.container}>
+        <Box margin="10px">
         {basicDetails.map((eachRow, index) => {
           return (
             <Box className={classes.row} key={index}>
@@ -119,10 +120,12 @@ const Profile = () => {
             </Box>
           )
         })}
+        </Box>
         <Divider />
         </Box>
         </Box>
         <Box className={classes.container}>
+        <Box margin="10px">
         <Box className={classes.header}>
           <Box>
             <Extension color="primary" />
@@ -143,6 +146,7 @@ const Profile = () => {
             </Box>
           )
         })}
+        </Box>
       </Box>
     </Box>
   )

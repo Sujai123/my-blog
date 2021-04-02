@@ -55,22 +55,25 @@ const HomeContainer = () => {
       </Box>
       <Box className={classes.footer}>
         <Box>
-          Fnd me on Social media
+          Find me on Social media
           </Box>
         <Box>
-          <Box component="a" href="https://github.com/Sujai123/" target="_blank">
+        <Box component="a" href="https://m.facebook.com/sujai.beniks.5" target="_blank">
+            <Facebook color="secondary" />
+          </Box>
+          <Box component="a" href="https://www.instagram.com/__silent___eyes____/" target="_blank">
             <Instagram color="secondary" />
           </Box>
-          <Box component="a" href="https://github.com/Sujai123/" target="_blank">
+          <Box component="a" href="mailto:sujaibeniks001@gmail.com">
             <Mail color="secondary" />
           </Box>
-          <Box component="a" href="https://github.com/Sujai123/" target="_blank">
+          <Box component="a" href="https://www.linkedin.com/mwlite/in/sujai-beniks-j-89693616b" target="_blank">
             <LinkedIn color="secondary" />
           </Box>
           <Box component="a" href="https://github.com/Sujai123/" target="_blank">
             <GitHub color="secondary" />
           </Box>
-          <Box component="a" href="https://github.com/Sujai123/" target="_blank">
+          <Box component="a" href="https://mobile.twitter.com/sujai_beniks" target="_blank">
             <Twitter color="secondary" />
           </Box>
         </Box>

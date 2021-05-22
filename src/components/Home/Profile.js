@@ -1,8 +1,7 @@
 import { Box, Divider, LinearProgress, makeStyles } from '@material-ui/core'
 import { Extension, Home, Mail, Work } from '@material-ui/icons'
 import React from 'react'
-// import {ReactComponent as Logo} from "../../images/blog-logo.svg";
-// const {ReactComponent: Logo} = React.lazy(() => import('../../images/blog-logo.svg'));
+import {ReactComponent as Logo} from "../../images/blog-logo.svg";
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -103,7 +102,7 @@ const Profile = () => {
       <Box>
       <Box>
         <Box width="100%" height="100%" style={{filter: "brightness(0.9)"}}>
-          {/* <Logo /> */}
+          <Logo />
         </Box>
         <Box className={classes.name}>Sujai Beniks J</Box>
       </Box>

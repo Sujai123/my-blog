@@ -1,5 +1,5 @@
 import { makeStyles, Box, Divider } from '@material-ui/core'
-import { CalendarToday, DateRange, Work } from '@material-ui/icons'
+import { DateRange, Work } from '@material-ui/icons'
 import React from 'react'
 
 const useStyles = makeStyles((theme) => ({

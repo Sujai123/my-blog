@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, makeStyles } from "@material-ui/core";
-import styles from "./home.module.css"
 import Profile from './Profile';
 import { Facebook, GitHub, Instagram, LinkedIn, Mail, Twitter } from '@material-ui/icons';
 import WorkDetails from './WorkDetails';

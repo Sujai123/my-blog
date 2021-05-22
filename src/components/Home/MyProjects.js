@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles, Box, Divider } from '@material-ui/core'
-import { AccountTree, CalendarToday, DateRange, OpenInBrowser, OpenInNew, Work } from '@material-ui/icons'
+import { AccountTree, DateRange, OpenInNew } from '@material-ui/icons'
 import myProjects from '../../myProjects'
 
 const useStyles = makeStyles((theme) => ({
@@ -15,7 +15,13 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "20px",
     marginBottom: "10px",
     display: "flex",
-    alignItems: "center"
+    alignItems: "center",
+  },
+  titleContainer: {
+    display: "flex",
+    [theme.breakpoints.down('sm')]: {
+      display: "initial"
+    },
   },
   dateRange: {
     display: "flex",
@@ -66,15 +72,17 @@ const MyProjects = () => {
         return (
           <Box key={index}>
             <Box className={classes.role}>
-              <Box>
-                {title}
-              </Box>
-              <Box display="flex" onClick={onClick}>
-                <Box className={classes.link}>
-                  Open Project
+              <Box className={classes.titleContainer}>
+                <Box>
+                  {title}
                 </Box>
-                <Box className={classes.link}>
-                  <OpenInNew fontSize="small" />
+                <Box display="flex" onClick={onClick}>
+                  <Box className={classes.link}>
+                    Open Project
+                </Box>
+                  <Box className={classes.link}>
+                    <OpenInNew fontSize="small" />
+                  </Box>
                 </Box>
               </Box>
             </Box>
@@ -88,12 +96,12 @@ const MyProjects = () => {
             </Box>
             <Box>
               {technologyUsed
-              .split(",")
-              .map((each, index) => (
-                <Box className={classes.current} key={index} mr="5px">
-                  {each}
-                </Box>
-              ))}
+                .split(",")
+                .map((each, index) => (
+                  <Box className={classes.current} key={index} mr="5px">
+                    {each}
+                  </Box>
+                ))}
             </Box>
             <Box className={classes.description}>
               {description}

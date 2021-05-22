@@ -1,4 +1,4 @@
-import { Box, Divider, LinearProgress, makeStyles, Slider, StylesProvider } from '@material-ui/core'
+import { Box, Divider, LinearProgress, makeStyles } from '@material-ui/core'
 import { Extension, Home, Mail, Work } from '@material-ui/icons'
 import React from 'react'
 import Logo from "../../images/logo"
@@ -101,7 +101,7 @@ const Profile = () => {
     <Box className={classes.profileContainer} >
       <Box>
       <Box>
-        <Box>
+        <Box width="100%" height="100%" style={{filter: "brightness(0.9)"}}>
           <Logo />
         </Box>
         <Box className={classes.name}>Sujai Beniks J</Box>
